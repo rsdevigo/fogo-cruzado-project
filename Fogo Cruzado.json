@@ -295,7 +295,7 @@
         {
           "persistentUuid": "ac86e29e-3162-4e25-a89d-d34283239e98",
           "type": "number",
-          "value": 100
+          "value": 0
         },
         {
           "persistentUuid": "b23ecb4d-f8d6-45f3-a80b-c43c9e5db07f",
@@ -340,7 +340,7 @@
         {
           "persistentUuid": "e733d46f-eb64-4268-9ecb-e1df1ca2de33",
           "type": "number",
-          "value": 68
+          "value": 70
         }
       ]
     },
@@ -482,7 +482,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.74965635594333,
+        "zoomFactor": 0.7636182849769242,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -502,6 +502,9 @@
             },
             {
               "name": "Torre"
+            },
+            {
+              "name": "Explosao"
             }
           ]
         },
@@ -667,7 +670,7 @@
           "persistentUuid": "217947e1-5bde-4b59-ad21-6c9a30f11a85",
           "width": 0,
           "x": 120,
-          "y": -392,
+          "y": -376,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -699,7 +702,7 @@
           "persistentUuid": "d262c512-4797-4154-876c-734d57e36a58",
           "width": 0,
           "x": 24,
-          "y": -104,
+          "y": -88,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -747,7 +750,7 @@
           "persistentUuid": "4f194aff-24b7-48e2-98a5-7e1cb4180fa1",
           "width": 0,
           "x": 200,
-          "y": -200,
+          "y": -184,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -1201,9 +1204,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 200,
               "name": "DestruirFora",
               "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 200,
               "unseenGraceDistance": 10000
             }
           ],
@@ -1276,9 +1279,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 200,
               "name": "DestruirFora",
               "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 200,
               "unseenGraceDistance": 10000
             }
           ],
@@ -1310,20 +1313,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 2,
-                            "y": 1
+                            "x": 1,
+                            "y": 2
                           },
                           {
-                            "x": 14,
-                            "y": 1
+                            "x": 15,
+                            "y": 2
                           },
                           {
-                            "x": 14,
-                            "y": 15
+                            "x": 15,
+                            "y": 14
                           },
                           {
-                            "x": 2,
-                            "y": 15
+                            "x": 1,
+                            "y": 14
                           }
                         ]
                       ]
@@ -2192,6 +2195,247 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "ExplosaoAr",
+          "persistentUuid": "bf6d4499-bcb0-4854-a2c7-39cd9a4a6189",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/explosao_01.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 48
+                          },
+                          {
+                            "x": 0,
+                            "y": 48
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/explosao_02.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 48
+                          },
+                          {
+                            "x": 0,
+                            "y": 48
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/explosao_03.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 48
+                          },
+                          {
+                            "x": 0,
+                            "y": 48
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/explosao_04.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 48
+                          },
+                          {
+                            "x": 0,
+                            "y": 48
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/explosao_05.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 48
+                          },
+                          {
+                            "x": 0,
+                            "y": 48
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/explosao_06.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 24,
+                        "y": 24
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 0
+                          },
+                          {
+                            "x": 48,
+                            "y": 48
+                          },
+                          {
+                            "x": 0,
+                            "y": 48
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -2232,6 +2476,9 @@
           },
           {
             "objectName": "Explosao"
+          },
+          {
+            "objectName": "ExplosaoAr"
           },
           {
             "objectName": "PontosLabel"
@@ -2635,20 +2882,10 @@
                   },
                   "parameters": [
                     "",
-                    "Explosao",
+                    "ExplosaoAr",
                     "InimigosAr.X()",
                     "InimigosAr.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Explosao",
-                    "=",
-                    "10"
+                    "\"Ar\""
                   ]
                 },
                 {
@@ -2694,6 +2931,31 @@
               },
               "parameters": [
                 "Explosao",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "ExplosaoAr",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ExplosaoAr",
                 ""
               ]
             }
@@ -2769,6 +3031,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2835,6 +3098,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2876,62 +3140,114 @@
             {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "MarcadorTanque",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "ChanceTorre[Wave-1]",
-                    ">=",
-                    "RandomFloatInRange(1,100)"
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
+                    "value": "SetNumberVariable"
                   },
                   "parameters": [
-                    "",
-                    "Torre",
-                    "MarcadorTanque.X()",
-                    "MarcadorTanque.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "BaseTorre",
-                    "MarcadorTanque.X()",
-                    "MarcadorTanque.Y()",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "BaseTorre",
+                    "indiceChance",
                     "=",
-                    "5"
+                    "Wave"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "Wave",
+                        ">=",
+                        "10"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "indiceChance",
+                        "=",
+                        "10"
+                      ]
+                    }
                   ]
                 },
                 {
-                  "type": {
-                    "value": "SetZOrder"
-                  },
-                  "parameters": [
-                    "Torre",
-                    "=",
-                    "6"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "ChanceTorre[indiceChance-1]",
+                        ">=",
+                        "RandomFloatInRange(1,100)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetZOrder"
+                      },
+                      "parameters": [
+                        "Torre",
+                        "=",
+                        "6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetZOrder"
+                      },
+                      "parameters": [
+                        "BaseTorre",
+                        "=",
+                        "5"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "BaseTorre",
+                        "MarcadorTanque.X()",
+                        "MarcadorTanque.Y()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Torre",
+                        "MarcadorTanque.X()",
+                        "MarcadorTanque.Y()",
+                        ""
+                      ]
+                    }
                   ]
+                }
+              ],
+              "variables": [
+                {
+                  "name": "indiceChance",
+                  "type": "number",
+                  "value": 0
                 }
               ]
             }
@@ -2940,7 +3256,85 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
+          "actions": [
+            {
+              "type": {
+                "value": "RotateTowardObject"
+              },
+              "parameters": [
+                "Torre",
+                "Jogador",
+                "0",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Torre",
+                "Explosao",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Pontos",
+                "+",
+                "300"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Torre",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "BaseTorre",
+                "Explosao",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "BaseTorre",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
