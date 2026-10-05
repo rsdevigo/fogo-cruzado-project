@@ -231,7 +231,7 @@
       {
         "file": "assets/zigue.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/zigue.png\",\"extension\":\".png\"}",
         "name": "assets/zigue.png",
         "smoothed": false,
         "userAdded": false
@@ -247,7 +247,7 @@
       {
         "file": "assets/caca.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/caca.png\",\"extension\":\".png\"}",
         "name": "assets/caca.png",
         "smoothed": false,
         "userAdded": false
@@ -336,6 +336,9 @@
           "objects": [
             {
               "name": "Zigue"
+            },
+            {
+              "name": "Caca"
             }
           ]
         },
@@ -374,7 +377,7 @@
           "name": "ParaCriar",
           "persistentUuid": "177c1d20-6f72-4b73-921a-907c9e96a972",
           "type": "number",
-          "value": 0
+          "value": 3
         },
         {
           "name": "Escapou",
@@ -817,9 +820,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 200,
               "name": "DestruirFora",
               "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 200,
               "unseenGraceDistance": 10000
             }
           ],
@@ -1337,14 +1340,22 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "extraBorder": 200,
+              "name": "DestruirFora",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "unseenGraceDistance": 10000
+            }
+          ],
           "animations": [
             {
-              "name": "",
+              "name": "assets/zigue",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
@@ -1883,6 +1894,94 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Caca",
+          "persistentUuid": "19951085-6212-4150-a8a3-feb2127b4514",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [
+            {
+              "name": "Vida",
+              "persistentUuid": "e4fc9e5d-d351-4f15-a1cf-56fcf46b3f6b",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "X0",
+              "persistentUuid": "295dca9d-7bd8-4976-80a1-4559e2bcc668",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Atirou",
+              "persistentUuid": "d78aaba9-5746-42b5-ae97-167c0ef06f5b",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [],
+          "behaviors": [
+            {
+              "extraBorder": 200,
+              "name": "DestruirFora",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "unseenGraceDistance": 10000
+            }
+          ],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/caca.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 4
+                          },
+                          {
+                            "x": 32,
+                            "y": 4
+                          },
+                          {
+                            "x": 32,
+                            "y": 28
+                          },
+                          {
+                            "x": 0,
+                            "y": 28
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1938,6 +2037,9 @@
           },
           {
             "objectName": "Jogador"
+          },
+          {
+            "objectName": "Caca"
           }
         ]
       },
@@ -1970,6 +2072,15 @@
               "parameters": [
                 "",
                 "\"tiro\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"spawn\""
               ]
             }
           ]
@@ -2155,6 +2266,207 @@
                 "0",
                 "-300",
                 "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ParaCriar",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"spawn\"",
+                ">",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ParaCriar",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Caca",
+                "RandomInRange(16, 208)",
+                "-16",
+                "\"Ar\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AddForceXY"
+              },
+              "parameters": [
+                "Caca",
+                "0",
+                "90",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"spawn\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "InimigosAr",
+                "TiroJogador",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "InimigosAr",
+                "Vida",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "TiroJogador",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "InimigosAr",
+                "Vida",
+                "<=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "InimigosAr",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Explosao",
+                    "InimigosAr.X()",
+                    "InimigosAr.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "Explosao",
+                    "=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Pontos",
+                    "+",
+                    "100"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "InimigosAr",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::HasAnimationEnded"
+              },
+              "parameters": [
+                "Explosao",
+                "Animation"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Explosao",
+                ""
               ]
             }
           ]
