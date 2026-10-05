@@ -655,6 +655,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Ar",
+          "name": "Jogador",
+          "persistentUuid": "9cc8cbbf-d736-4680-98b4-365056c83205",
+          "width": 0,
+          "x": 112,
+          "y": 240,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1782,6 +1798,84 @@
             "lineHeight": 0,
             "color": "212;14;14"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": false,
+          "assetStoreId": "",
+          "name": "Jogador",
+          "persistentUuid": "a163d931-44e8-43de-a2e3-7a50ccd49fb6",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "acceleration": 20000,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 20000,
+              "ignoreDefaultControls": false,
+              "maxSpeed": 120,
+              "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": false,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "useLegacyTurnBack": false,
+              "viewpoint": "TopDown"
+            }
+          ],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/jogador.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 16,
+                        "y": 16
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11,
+                            "y": 11
+                          },
+                          {
+                            "x": 21,
+                            "y": 11
+                          },
+                          {
+                            "x": 21,
+                            "y": 21
+                          },
+                          {
+                            "x": 11,
+                            "y": 21
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1834,6 +1928,9 @@
           },
           {
             "objectName": "VidaLabel"
+          },
+          {
+            "objectName": "Jogador"
           }
         ]
       },
@@ -1917,6 +2014,24 @@
                 "Text",
                 "=",
                 "\"WAV\"+NewLine()+Wave"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Jogador",
+                "=",
+                "clamp(Jogador.X(), 16, 208)",
+                "=",
+                "clamp(Jogador.Y(), 16, 272)"
               ]
             }
           ]
@@ -2087,6 +2202,10 @@
         {
           "name": "TileMap",
           "type": "TileMap::TileMapBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
     },
