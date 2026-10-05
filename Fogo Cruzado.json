@@ -151,7 +151,7 @@
       {
         "file": "assets/torre.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/torre.png\",\"extension\":\".png\"}",
         "name": "assets/torre.png",
         "smoothed": false,
         "userAdded": false
@@ -286,6 +286,177 @@
       "persistentUuid": "bb306cde-4ae0-4721-add3-e04038d4102c",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "ChanceTorre",
+      "persistentUuid": "686140d5-9fcb-47b1-9e05-1f76453c0a6b",
+      "type": "array",
+      "children": [
+        {
+          "persistentUuid": "ac86e29e-3162-4e25-a89d-d34283239e98",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "persistentUuid": "b23ecb4d-f8d6-45f3-a80b-c43c9e5db07f",
+          "type": "number",
+          "value": 30
+        },
+        {
+          "persistentUuid": "3257368e-7345-43e0-82f5-5719a5814baa",
+          "type": "number",
+          "value": 45
+        },
+        {
+          "persistentUuid": "cc15647f-b77f-48be-9fef-0f7341828e61",
+          "type": "number",
+          "value": 45
+        },
+        {
+          "persistentUuid": "5d6563ce-8086-4be8-abae-f10e1100447a",
+          "type": "number",
+          "value": 45
+        },
+        {
+          "persistentUuid": "193464e5-d2d8-4a89-834f-f4d875cc422e",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "persistentUuid": "1a0b64ef-b952-488e-b681-240bfce22c5c",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "persistentUuid": "1315d029-4418-40f8-bb38-e483471b5891",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "persistentUuid": "cd5d7e91-a07d-40fa-8725-4e4e9b57fb2f",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "persistentUuid": "e733d46f-eb64-4268-9ecb-e1df1ca2de33",
+          "type": "number",
+          "value": 68
+        }
+      ]
+    },
+    {
+      "name": "ChanceCaca",
+      "persistentUuid": "5f183e82-b32a-4608-bf1b-11467aa82377",
+      "type": "array",
+      "children": [
+        {
+          "persistentUuid": "b97ed120-dec1-4862-8e7a-c84c82d702c5",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "persistentUuid": "8cf5f259-a8c7-4349-a2e0-ad825e1fb350",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "persistentUuid": "1d953ef3-f109-4f31-b90c-1a4f2158463b",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "persistentUuid": "48d6fb18-e6c6-4d0b-9675-064cace008c2",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "persistentUuid": "3f15a5b2-a473-42a0-9de1-ed3720b573ab",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "persistentUuid": "bebe4bba-6e14-47b1-b3b4-fdb1b40d1a9f",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "persistentUuid": "b424a12c-bd30-4a3a-8f68-0efec020ddc1",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "persistentUuid": "b75fc8e2-c738-4e97-aa34-b03a559d53de",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "persistentUuid": "98a6427e-5bda-44c1-b89e-78ef4f1faa6f",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "persistentUuid": "a81d71c3-5cce-44b0-bbec-53fb47c1c4fd",
+          "type": "number",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "ChanceZigue",
+      "persistentUuid": "0e15c431-d616-4736-8100-a6c44070328c",
+      "type": "array",
+      "children": [
+        {
+          "persistentUuid": "219fa6d1-b2ed-4a5a-9cea-cdc0ed0d1f98",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "persistentUuid": "1f4fb4dd-fd69-4e33-be89-85cffc951a34",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "persistentUuid": "26c627b4-552b-419a-ba1b-91197c759ac7",
+          "type": "number",
+          "value": 40
+        },
+        {
+          "persistentUuid": "32f8ecf2-8306-4d93-8cff-5f6ba433fa72",
+          "type": "number",
+          "value": 40
+        },
+        {
+          "persistentUuid": "a7d458eb-b5cd-48e7-abef-5ad60fd6738d",
+          "type": "number",
+          "value": 40
+        },
+        {
+          "persistentUuid": "d8abf5dc-bf79-4984-b308-fe688a42c432",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "persistentUuid": "362f405e-0ce2-41d6-8101-db9220be8ca4",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "persistentUuid": "7ddf3e4a-c840-42f4-9f88-42ac54588476",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "persistentUuid": "0db7b599-dec0-4636-8e8d-52b5da22f785",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "persistentUuid": "24d21ef5-a6ad-4ffc-9432-748ba5deff48",
+          "type": "number",
+          "value": 50
+        }
+      ]
     }
   ],
   "layouts": [
@@ -311,7 +482,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.1752115951047233,
+        "zoomFactor": 1.74965635594333,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -328,6 +499,9 @@
             },
             {
               "name": "BaseTorre"
+            },
+            {
+              "name": "Torre"
             }
           ]
         },
@@ -444,8 +618,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "8f512795-4422-42a9-9f52-5b22f00001eb",
           "width": 0,
-          "x": 128,
-          "y": -832,
+          "x": 136,
+          "y": -824,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -460,8 +634,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "4cf7b4c8-b949-4895-bb8d-4822b7f8836d",
           "width": 0,
-          "x": 112,
-          "y": -672,
+          "x": 120,
+          "y": -664,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -476,8 +650,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "7c4ee0c0-50f2-4b30-9fe9-e903edf1509c",
           "width": 0,
-          "x": 128,
-          "y": -576,
+          "x": 136,
+          "y": -568,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -492,8 +666,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "217947e1-5bde-4b59-ad21-6c9a30f11a85",
           "width": 0,
-          "x": 128,
-          "y": -384,
+          "x": 120,
+          "y": -392,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -508,8 +682,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "8d7bc025-0703-47ed-898b-24f00893d2ec",
           "width": 0,
-          "x": 112,
-          "y": -480,
+          "x": 120,
+          "y": -472,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -524,8 +698,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "d262c512-4797-4154-876c-734d57e36a58",
           "width": 0,
-          "x": 16,
-          "y": -96,
+          "x": 24,
+          "y": -104,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -540,8 +714,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "f5c5dac3-a686-4edb-96d6-3f5c3883ae72",
           "width": 0,
-          "x": 80,
-          "y": -288,
+          "x": 88,
+          "y": -280,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -556,8 +730,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "8432aa87-703f-4273-ab1d-a6a5c3552ecc",
           "width": 0,
-          "x": 176,
-          "y": -96,
+          "x": 184,
+          "y": -88,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -572,8 +746,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "4f194aff-24b7-48e2-98a5-7e1cb4180fa1",
           "width": 0,
-          "x": 192,
-          "y": -192,
+          "x": 200,
+          "y": -200,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -588,8 +762,8 @@
           "name": "MarcadorTanque",
           "persistentUuid": "edac4e11-797c-4495-9631-9595ec3f70c3",
           "width": 0,
-          "x": 96,
-          "y": -16,
+          "x": 104,
+          "y": -8,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -671,6 +845,22 @@
           "x": 112,
           "y": 240,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Ar",
+          "name": "Mira",
+          "persistentUuid": "690c298a-1dcd-493e-947b-e407dd0744a6",
+          "width": 0,
+          "x": 112,
+          "y": 192,
+          "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -792,8 +982,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 8,
+                        "y": 8
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -1009,7 +1199,14 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "extraBorder": 200,
+              "name": "DestruirFora",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "unseenGraceDistance": 10000
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -1077,14 +1274,22 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "extraBorder": 200,
+              "name": "DestruirFora",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "unseenGraceDistance": 10000
+            }
+          ],
           "animations": [
             {
-              "name": "",
+              "name": "default",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
@@ -1138,7 +1343,12 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -1342,9 +1552,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 200,
               "name": "DestruirFora",
               "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 200,
               "unseenGraceDistance": 10000
             }
           ],
@@ -1925,9 +2135,9 @@
           "effects": [],
           "behaviors": [
             {
-              "extraBorder": 200,
               "name": "DestruirFora",
               "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 200,
               "unseenGraceDistance": 10000
             }
           ],
@@ -2159,6 +2369,24 @@
                 "clamp(Jogador.X(), 16, 208)",
                 "=",
                 "clamp(Jogador.Y(), 16, 272)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Mira",
+                "=",
+                "Jogador.X()",
+                "=",
+                "Jogador.Y() - 64"
               ]
             }
           ]
@@ -2470,6 +2698,249 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"x\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "",
+                "Bomba",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Bomba",
+                "Jogador.X()",
+                "Jogador.Y()",
+                "\"Tiros\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "Bomba",
+                "Tween",
+                "\"bombaPosicao\"",
+                "Mira.X()",
+                "Mira.Y()",
+                "\"linear\"",
+                "0.5",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectScaleTween3"
+              },
+              "parameters": [
+                "Bomba",
+                "Tween",
+                "\"bombaEscala\"",
+                "0.5",
+                "\"linear\"",
+                "0.5",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "Bomba",
+                "Tween",
+                "\"bombaEscala\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::HasFinished"
+              },
+              "parameters": [
+                "Bomba",
+                "Tween",
+                "\"bombaPosicao\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Bomba",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Explosao",
+                    "Bomba.X()",
+                    "Bomba.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "Explosao",
+                    "=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bomba",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "MarcadorTanque",
+                ">=",
+                "-16"
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "MarcadorTanque",
+                "Usado",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "MarcadorTanque",
+                "Usado",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "MarcadorTanque",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ChanceTorre[Wave-1]",
+                    ">=",
+                    "RandomFloatInRange(1,100)"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Torre",
+                    "MarcadorTanque.X()",
+                    "MarcadorTanque.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "BaseTorre",
+                    "MarcadorTanque.X()",
+                    "MarcadorTanque.Y()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "BaseTorre",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetZOrder"
+                  },
+                  "parameters": [
+                    "Torre",
+                    "=",
+                    "6"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -2593,6 +3064,10 @@
         {
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     },
